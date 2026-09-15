@@ -1,0 +1,40 @@
+<main>
+  <h1>Catálogo de Filmes</h1>
+  <p>Gabriel Henrique Fernandes Torres - RA 251157</p>
+  <p>Alexandre - RA 251956</p>
+
+  <h2>Filmes</h2>
+  <ul>
+    @for (filme of filmes; track $index) {
+      <li>
+        <button type="button" (click)="selecionarFilme(filme)">
+          {{ filme }}
+        </button>
+      </li>
+    }
+  </ul>
+
+  <label for="novoFilme">Novo filme:</label>
+  <div class="cadastro">
+    <input id="novoFilme" type="text" [(ngModel)]="novoFilme">
+    <button type="button" (click)="adicionarFilme()" [disabled]="!novoFilme.trim()">
+      Adicionar
+    </button>
+  </div>
+
+  @if (filmeSelecionado) {
+    <section [class.favorito]="favorito">
+      <h2>{{ filmeSelecionado }}</h2>
+      <p>{{ favorito ? 'Filme favorito' : 'Não marcado como favorito' }}</p>
+      <p>Visualizações: {{ visualizacoes }}</p>
+      <button type="button" (click)="alternarFavorito()">
+        {{ favorito ? 'Remover dos favoritos' : 'Adicionar aos favoritos' }}
+      </button>
+      <button type="button" (click)="aumentarVisualizacoes()">
+        Aumentar visualizações
+      </button>
+    </section>
+  } @else {
+    <p>Nenhum filme selecionado.</p>
+  }
+</main>

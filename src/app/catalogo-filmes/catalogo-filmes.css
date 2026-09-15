@@ -1,0 +1,66 @@
+main {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+h1, h2 {
+  color: #234d72;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 3px;
+  background-color: #245d8c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #173e60;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #444;
+  cursor: default;
+}
+
+.cadastro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 8px 0 20px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+section {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+.favorito {
+  background-color: #fff3c4;
+  border-color: #a87d00;
+}
