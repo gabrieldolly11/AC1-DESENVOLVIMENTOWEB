@@ -1,7 +1,7 @@
 # AC1 - Catálogo de Filmes
 
-- Gabriel Henrique Fernandes Torres - RA 251157
-- Alexandre - RA 251956
+- Gabriel Henrique Fernandes Torres
+- Alexandre
 
 Projeto em Angular para cadastrar e selecionar filmes, marcar favorito e contar visualizações.
 
